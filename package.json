@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server/index.js",
-    "client-dev": "webpack build --watch"
+    "client-dev": "webpack build --watch",
+    "tailwind": "npx tailwindcss -i ./src/css/styles.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
