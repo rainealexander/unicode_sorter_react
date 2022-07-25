@@ -15,7 +15,7 @@ class InteractiveGrid extends React.Component {
     for (let row = 0; row < this.state.gridHeight; row++) {
       let rowContent = [];
       for (let i = 0; i < this.state.gridWidth; i++) {
-        rowContent.push(<td id={`cell-${cellCounter}`} class="border border-solid border-black w-5 h-6"></td>);
+        rowContent.push(<td id={`cell-${cellCounter}`} class="border border-solid border-black border-spacing-1 w-7 h-8"></td>);
         cellCounter++;
       }
       rows.push(<tr>{rowContent}</tr>);
@@ -25,7 +25,7 @@ class InteractiveGrid extends React.Component {
 
   render() {
     return (
-      <table class="w-2/6 grid">{this.makeGrid()}</table>
+      <table class="table-fixed border-separate border-spacing-1">{this.makeGrid()}</table>
     );
   }
 };
