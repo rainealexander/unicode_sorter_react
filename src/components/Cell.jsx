@@ -12,7 +12,7 @@ const Cell = (props) => {
       id={props.cellId} 
       ata-testid={props.cellId} 
       class="border border-solid border-black border-spacing-1 w-7 h-8">
-        {String.fromCodePoint(character) }
+        {character ? String.fromCodePoint(character) : String.fromCodePoint(0)}
     </td>
   )
 };
